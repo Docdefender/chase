@@ -23,11 +23,11 @@ class MainWindow(QMainWindow):
         self.my_button.enterEvent = lambda event: self.move_button_random_my()
 
         self.ny_button = QPushButton("NO", self)
-        self.ny_button.setGeometry(button_x, button_y - 100, button_width, button_height)
+        self.ny_button.setGeometry(button_x, button_y - 150, button_width, button_height)
         self.ny_button.enterEvent = lambda event: self.move_button_random_ny()
 
         self.demo_button = QPushButton("MAYBE", self)
-        self.demo_button.setGeometry(button_x, button_y - 150, button_width, button_height)
+        self.demo_button.setGeometry(button_x, button_y - 250, button_width, button_height)
         self.demo_button.enterEvent = lambda event: self.move_button_random()
 
     def change_button_color(self):
